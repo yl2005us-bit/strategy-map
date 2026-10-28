@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 奇美醫院護理部主管共識營 | 策略藍圖</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    colors: {
+                        chimei: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar for tables */
+        .table-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .table-container::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+            border-radius: 4px;
+        }
+        .table-container::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        .table-container::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-hospital text-chimei-700 text-2xl"></i>
+                    <span class="font-bold text-xl text-chimei-900 tracking-wider">共識營策略藍圖</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#overview" class="text-gray-600 hover:text-chimei-700 font-medium transition">大會概要</a>
+                    <a href="#strategy-map" class="text-gray-600 hover:text-chimei-700 font-medium transition">策略地圖</a>
+                    <a href="#phase1" class="text-gray-600 hover:text-chimei-700 font-medium transition">九大風險策略</a>
+                    <a href="#phase2" class="text-gray-600 hover:text-chimei-700 font-medium transition">世界咖啡館</a>
+                </div>
+                <!-- Mobile menu button (visual only for simple static layout) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-chimei-700 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-chimei-900 via-chimei-800 to-teal-900 text-white pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/20 text-chimei-50 text-sm font-semibold mb-4 backdrop-blur-sm border border-white/30">
+                2026 年度策略規劃
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight drop-shadow-lg">
+                奇美醫院護理部主管共識營
+            </h1>
+            <p class="text-xl md:text-2xl text-chimei-100 max-w-3xl mx-auto font-light leading-relaxed mb-10">
+                各組成果摘要與策略藍圖 <br class="hidden md:block">
+                <span class="text-lg">以 Magnet Hospital 磁吸精神為主軸，整合風險盤點與具體行動方案</span>
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#strategy-map" class="bg-white text-chimei-800 hover:bg-gray-100 px-6 py-3 rounded-lg font-bold shadow-lg transition transform hover:-translate-y-1">
+                    <i class="fa-solid fa-map-location-dot mr-2"></i> 檢視策略地圖
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Statistics -->
+    <section id="overview" class="relative z-20 -mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass-card rounded-xl shadow-xl p-6 border-t-4 border-chimei-500 transform transition hover:-translate-y-1">
+                <div class="flex items-center gap-4 mb-3">
+                    <div class="bg-chimei-100 p-3 rounded-lg text-chimei-700">
+                        <i class="fa-solid fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800">參與對象</h3>
+                </div>
+                <p class="text-gray-600 font-medium">護理部副護理長以上主管</p>
+                <p class="text-3xl font-black text-chimei-700 mt-2">約 120 名</p>
+            </div>
+            
+            <div class="glass-card rounded-xl shadow-xl p-6 border-t-4 border-blue-500 transform transition hover:-translate-y-1">
+                <div class="flex items-center gap-4 mb-3">
+                    <div class="bg-blue-100 p-3 rounded-lg text-blue-700">
+                        <i class="fa-solid fa-bullseye text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800">核心架構 (Magnet)</h3>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-3">
+                    <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm font-medium">變革領導</span>
+                    <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm font-medium">組織賦能</span>
+                    <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm font-medium">專業實踐</span>
+                    <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm font-medium">創新改善</span>
+                    <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm font-medium">實證成果</span>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-xl shadow-xl p-6 border-t-4 border-amber-500 transform transition hover:-translate-y-1">
+                <div class="flex items-center gap-4 mb-3">
+                    <div class="bg-amber-100 p-3 rounded-lg text-amber-700">
+                        <i class="fa-solid fa-lightbulb text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800">核心工作原則</h3>
+                </div>
+                <ul class="text-gray-600 space-y-2 mt-2 font-medium">
+                    <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> 先流程後系統</li>
+                    <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> 以人為本推動減勞減壓</li>
+                    <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> 建立閉環協作機制</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy Map Section -->
+    <section id="strategy-map" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black text-gray-900 mb-4">策略地圖合體總覽</h2>
+                <div class="w-24 h-1 bg-chimei-600 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    整合第一階段九組風險盤點成果，對齊 Magnet 五大構面，萃取具體行動與關鍵績效指標（KPI）。
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                <div class="table-container overflow-x-auto w-full">
+                    <table class="w-full text-sm text-left whitespace-nowrap min-w-[1000px]">
+                        <thead class="bg-chimei-800 text-white">
+                            <tr>
+                                <th class="px-6 py-4 font-bold tracking-wider rounded-tl-xl w-1/4">策略目標</th>
+                                <th class="px-6 py-4 font-bold tracking-wider w-1/6">護理部策略構面</th>
+                                <th class="px-6 py-4 font-bold tracking-wider w-1/3">具體行動</th>
+                                <th class="px-6 py-4 font-bold tracking-wider w-1/6">KPI</th>
+                                <th class="px-6 py-4 font-bold tracking-wider rounded-tr-xl">Magnet 對應</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <!-- Row 1 -->
+                            <tr class="hover:bg-chimei-50 transition-colors">
+                                <td class="px-6 py-4 whitespace-normal text-gray-800">建構多元護理人力招募與留任支持系統，運用 AI 與智慧排班工具，提升人力穩定、工作滿意與照護品質。</td>
+                                <td class="px-6 py-4 font-semibold text-chimei-700">人力招募與留任</td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li>盤點單位缺口並試辦 AI／智慧排班</li>
+                                        <li>制度化多元招募管道並落實彈性排班</li>
+                                        <li>建立護理人才培育留任平台與預警機制</li>
+                                    </ul>
+                                </td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">招募達成率、報到率、一年留任率、排班滿意度等。</td>
+                                <td class="px-6 py-4 text-gray-600">變革領導、組織賦能、實證成果</td>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr class="bg-gray-50 hover:bg-chimei-50 transition-colors">
+                                <td class="px-6 py-4 whitespace-normal text-gray-800">縮短跨世代溝通距離，建立多元、即時且具心理安全的溝通管道，提升工作滿意度、團隊合作與護理留任。</td>
+                                <td class="px-6 py-4 font-semibold text-chimei-700">跨世代溝通</td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li>建立數位溝通專區與跨世代對話</li>
+                                        <li>制度化雙向溝通與跨世代師徒制</li>
+                                        <li>建置跨世代溝通與健康職場模式</li>
+                                    </ul>
+                                </td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">心理安全感分數、平台回覆率、溝通申訴件數等。</td>
+                                <td class="px-6 py-4 text-gray-600">變革領導、組織賦能、創新改善</td>
+                            </tr>
+                            <!-- Row 3 -->
+                            <tr class="hover:bg-chimei-50 transition-colors">
+                                <td class="px-6 py-4 whitespace-normal text-gray-800">建立新人留任與適應支持系統，結合心理安全、AI 教學與跨世代溝通，提升滿意度、臨床勝任與一年留任率。</td>
+                                <td class="px-6 py-4 font-semibold text-chimei-700">新進人員留任</td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li>試辦心理諮商與 AI 教材</li>
+                                        <li>制度化適應追蹤與帶教者減負獎勵</li>
+                                        <li>建立新人留任整合平台與大數據分析</li>
+                                    </ul>
+                                </td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">新人各階段留任率、帶教滿意度、訓練完成率等。</td>
+                                <td class="px-6 py-4 text-gray-600">專業實踐、創新改善、實證成果</td>
+                            </tr>
+                            <!-- Row 4 -->
+                            <tr class="bg-gray-50 hover:bg-chimei-50 transition-colors">
+                                <td class="px-6 py-4 whitespace-normal text-gray-800">建構人力負荷管理與一貫式作業流程，透過支援人力制度化與跨部門協作，降低工作負荷與人事成本，提升準時下班率。</td>
+                                <td class="px-6 py-4 font-semibold text-chimei-700">人力負荷與流程</td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li>試辦轉床文件簡化流程</li>
+                                        <li>確立支援人力調度準則並導入資訊</li>
+                                        <li>建立風險 BI 儀表板，發展 AI 預測</li>
+                                    </ul>
+                                </td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">負荷下降20%、準時下班率達95%、臨時調動次數下降。</td>
+                                <td class="px-6 py-4 text-gray-600">變革領導、組織賦能、創新改善</td>
+                            </tr>
+                            <!-- Row 5 -->
+                            <tr class="hover:bg-chimei-50 transition-colors">
+                                <td class="px-6 py-4 whitespace-normal text-gray-800">建構以護理需求為核心的智慧科技導入與流程改善制度，降低工作負荷並提升留任率、滿意度與照護品質。</td>
+                                <td class="px-6 py-4 font-semibold text-chimei-700">科技導入</td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li>盤點重複登錄痛點並成立專案小組試辦</li>
+                                        <li>制度化上線前評估與超級使用者培訓</li>
+                                        <li>建立護理數位治理平台</li>
+                                    </ul>
+                                </td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">重複登錄時間下降、問題回覆時效、留任率提升10%。</td>
+                                <td class="px-6 py-4 text-gray-600">創新改善、組織賦能、實證成果</td>
+                            </tr>
+                             <!-- Row 6 -->
+                             <tr class="bg-gray-50 hover:bg-chimei-50 transition-colors">
+                                <td class="px-6 py-4 whitespace-normal text-gray-800">建構跨領域即時溝通與回饋系統，運用 AI／數位工具與動態進度追蹤，提升回覆效率、團隊信任與醫療品質。</td>
+                                <td class="px-6 py-4 font-semibold text-chimei-700">跨領域溝通</td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li>選定高風險流程試辦即時回饋</li>
+                                        <li>制度化協作平台與會議決議追蹤</li>
+                                        <li>發展 AI 輔助問題自動分類與預警</li>
+                                    </ul>
+                                </td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">訊息回覆達成率、任務如期完成率、醫療爭議下降率。</td>
+                                <td class="px-6 py-4 text-gray-600">變革領導、專業實踐、實證成果</td>
+                            </tr>
+                            <!-- Row 7 -->
+                            <tr class="hover:bg-chimei-50 transition-colors">
+                                <td class="px-6 py-4 whitespace-normal text-gray-800">建立新世代主管接班與支持系統，以明確職涯、薪資有感、行政減負與心理支持，提升年輕人員擔任主管之意願。</td>
+                                <td class="px-6 py-4 font-semibold text-chimei-700">主管晉升意願</td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li>盤點人才與壓力源，彙整津貼需求</li>
+                                        <li>開設培育課程與導師陪跑（Mentor）</li>
+                                        <li>制度化接班梯隊並鏈結健康職場</li>
+                                    </ul>
+                                </td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">接班意願率、缺額補足率、主管準時下班率。</td>
+                                <td class="px-6 py-4 text-gray-600">變革領導、組織賦能、實證成果</td>
+                            </tr>
+                            <!-- Row 8 -->
+                            <tr class="bg-gray-50 hover:bg-chimei-50 transition-colors">
+                                <td class="px-6 py-4 whitespace-normal text-gray-800">建構在職人員留任獎勵與幸福職場支持系統，透過福利制度、照護加給與智慧減負，提升留任率與滿意度。</td>
+                                <td class="px-6 py-4 font-semibold text-chimei-700">在職人員留任</td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li>研議專案留任獎勵與重症加給機制</li>
+                                        <li>確立津貼規範並試辦常規紀錄減負</li>
+                                        <li>建置幸福感與專科發展平台</li>
+                                    </ul>
+                                </td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">在職留任率 ≥95%、幸福感滿意度 ≥4.5分。</td>
+                                <td class="px-6 py-4 text-gray-600">變革領導、組織賦能、專業實踐</td>
+                            </tr>
+                            <!-- Row 9 -->
+                            <tr class="hover:bg-chimei-50 transition-colors">
+                                <td class="px-6 py-4 whitespace-normal text-gray-800">建立具高辨識度之奇美護理品牌，透過內部認同、專業故事與數位傳播，提升榮譽感、招募吸引力與照護信任。</td>
+                                <td class="px-6 py-4 font-semibold text-chimei-700">品牌形象</td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li>確認核心標語與視覺識別、故事盤點</li>
+                                        <li>推動品牌大使選拔與數位傳播培訓</li>
+                                        <li>成立跨部門品牌推動治理小組</li>
+                                    </ul>
+                                </td>
+                                <td class="px-6 py-4 whitespace-normal text-gray-600">內部認同度、招募報到率、故事徵件數、標竿認證數。</td>
+                                <td class="px-6 py-4 text-gray-600">變革領導、組織賦能、專業實踐</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phase 1: 9 Groups Section -->
+    <section id="phase1" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-chimei-600 font-bold tracking-wider uppercase text-sm">Phase 1</span>
+                <h2 class="text-3xl font-black text-gray-900 mt-2 mb-4">第一階段各組成果精華摘要</h2>
+                <div class="w-24 h-1 bg-chimei-600 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    深入盤點九大護理管理核心風險，並擬定針對性之 TOWS 策略與時程規劃。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Group 1 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full overflow-hidden">
+                    <div class="h-2 bg-blue-500 w-full"></div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">第一組</span>
+                            <a href="https://drive.google.com/file/d/19jLvEb6s5jeH2Ev7VirmHd0i1CjpA_9a/view?usp=drivesdk" target="_blank" class="text-gray-400 hover:text-blue-600 transition" title="開啟原始報告"><i class="fa-solid fa-file-word text-xl"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">人力招募風險與策略建議</h3>
+                        <div class="mb-4">
+                            <p class="text-sm text-red-600 font-bold mb-1"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Top 優先風險</p>
+                            <p class="text-gray-600 text-sm">人力招募困難，由單純補充擴大為排班、負荷與品質風險。</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-3 text-sm text-gray-700 mb-4 border border-gray-100">
+                            <span class="font-bold text-chimei-700 block mb-1">💡 決策重點</span>
+                            升級為跨年度人力永續策略，制度化多元管道並輔以智慧排班改善工作體驗。
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 border-t border-gray-100 text-sm">
+                        <span class="block font-bold text-gray-800 mb-1">時程規劃：</span>
+                        <ul class="text-gray-600 space-y-1">
+                            <li><span class="font-semibold">短期：</span>高需求單位試辦 AI/智慧排班</li>
+                            <li><span class="font-semibold">中期：</span>落實多元招募與彈性排班</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Group 2 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full overflow-hidden">
+                    <div class="h-2 bg-indigo-500 w-full"></div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">第二組</span>
+                            <a href="https://drive.google.com/file/d/1Rnz8CPauzd8G_ifOSgMtvUGWbqac039s/view?usp=drivesdk" target="_blank" class="text-gray-400 hover:text-indigo-600 transition" title="開啟原始報告"><i class="fa-solid fa-file-word text-xl"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">跨世代溝通落差風險與策略</h3>
+                        <div class="mb-4">
+                            <p class="text-sm text-red-600 font-bold mb-1"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Top 優先風險</p>
+                            <p class="text-gray-600 text-sm">跨世代價值期待差異，演變為人際挫折與衝突離職。</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-3 text-sm text-gray-700 mb-4 border border-gray-100">
+                            <span class="font-bold text-chimei-700 block mb-1">💡 決策重點</span>
+                            由單向宣導升級共融管理，建數位平台雙向回饋，落實主管傾聽培訓。
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 border-t border-gray-100 text-sm">
+                        <span class="block font-bold text-gray-800 mb-1">時程規劃：</span>
+                        <ul class="text-gray-600 space-y-1">
+                            <li><span class="font-semibold">短期：</span>建單位數位溝通專區、跨世代對話</li>
+                            <li><span class="font-semibold">中期：</span>跨世代師徒制、確立衝突協調標準</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Group 3 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full overflow-hidden">
+                    <div class="h-2 bg-emerald-500 w-full"></div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">第三組</span>
+                            <a href="https://drive.google.com/file/d/1rXivgvirElR-d9Sl4C8jf5vZpBp8F_Y7/view?usp=drivesdk" target="_blank" class="text-gray-400 hover:text-emerald-600 transition" title="開啟原始報告"><i class="fa-solid fa-file-word text-xl"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">新進護理人員留任風險</h3>
+                        <div class="mb-4">
+                            <p class="text-sm text-red-600 font-bold mb-1"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Top 優先風險</p>
+                            <p class="text-gray-600 text-sm">新人適應不良，引發資深帶教負荷與新手「雙向流失」。</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-3 text-sm text-gray-700 mb-4 border border-gray-100">
+                            <span class="font-bold text-chimei-700 block mb-1">💡 決策重點</span>
+                            升級為制度化新人支持系統，導 AI 教材，建高風險早期預警與介入機制。
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 border-t border-gray-100 text-sm">
+                        <span class="block font-bold text-gray-800 mb-1">時程規劃：</span>
+                        <ul class="text-gray-600 space-y-1">
+                            <li><span class="font-semibold">短期：</span>高風險單位試辦心理諮商與 AI 教材</li>
+                            <li><span class="font-semibold">中期：</span>帶教者工作減量與獎勵機制</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Group 4 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full overflow-hidden">
+                    <div class="h-2 bg-amber-500 w-full"></div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">第四組</span>
+                            <a href="https://drive.google.com/file/d/1sjNJ84sGcgNOleiSbxeJiEMjm-DbbWcF/view?usp=drivesdk" target="_blank" class="text-gray-400 hover:text-amber-600 transition" title="開啟原始報告"><i class="fa-solid fa-file-word text-xl"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">人力負荷與作業流程風險</h3>
+                        <div class="mb-4">
+                            <p class="text-sm text-red-600 font-bold mb-1"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Top 優先風險</p>
+                            <p class="text-gray-600 text-sm">臨時調動頻繁、作業流程不一，加班攀升與同仁疲憊。</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-3 text-sm text-gray-700 mb-4 border border-gray-100">
+                            <span class="font-bold text-chimei-700 block mb-1">💡 決策重點</span>
+                            轉型為「流程減量＋支援池＋資訊＋儀表板」治理，建轉床一貫式銜接流程。
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 border-t border-gray-100 text-sm">
+                        <span class="block font-bold text-gray-800 mb-1">時程規劃：</span>
+                        <ul class="text-gray-600 space-y-1">
+                            <li><span class="font-semibold">短期：</span>高需求單位試辦轉床文件簡化</li>
+                            <li><span class="font-semibold">中期：</span>修訂排班調度標準並導入資訊</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Group 5 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full overflow-hidden">
+                    <div class="h-2 bg-purple-500 w-full"></div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-bold px-3 py-1 rounded-full">第五組</span>
+                            <a href="https://drive.google.com/file/d/1Y7XD0V_-el_AQ1umHxeWcHZjtXsxLTXM/view?usp=drivesdk" target="_blank" class="text-gray-400 hover:text-purple-600 transition" title="開啟原始報告"><i class="fa-solid fa-file-word text-xl"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">科技導入與工作負荷風險</h3>
+                        <div class="mb-4">
+                            <p class="text-sm text-red-600 font-bold mb-1"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Top 優先風險</p>
+                            <p class="text-gray-600 text-sm">科技與現場脫節，形成重複登錄與系統操作阻力。</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-3 text-sm text-gray-700 mb-4 border border-gray-100">
+                            <span class="font-bold text-chimei-700 block mb-1">💡 決策重點</span>
+                            堅持「先流程後系統」，設跨部門窗口與 Super Users，免除資訊負擔轉嫁。
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 border-t border-gray-100 text-sm">
+                        <span class="block font-bold text-gray-800 mb-1">時程規劃：</span>
+                        <ul class="text-gray-600 space-y-1">
+                            <li><span class="font-semibold">短期：</span>盤點重複登錄，組跨部門小組試辦</li>
+                            <li><span class="font-semibold">中期：</span>上線前評估與超級使用者培訓制度化</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Group 6 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full overflow-hidden">
+                    <div class="h-2 bg-rose-500 w-full"></div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-rose-100 text-rose-800 text-xs font-bold px-3 py-1 rounded-full">第六組</span>
+                            <a href="https://drive.google.com/file/d/1QOK4dfYLLCqAfHrekogwsRiV7z0Xje83/view?usp=drivesdk" target="_blank" class="text-gray-400 hover:text-rose-600 transition" title="開啟原始報告"><i class="fa-solid fa-file-word text-xl"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">跨領域溝通風險與策略</h3>
+                        <div class="mb-4">
+                            <p class="text-sm text-red-600 font-bold mb-1"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Top 優先風險</p>
+                            <p class="text-gray-600 text-sm">交接缺時效追蹤，回覆延遲、資訊落差危及病安互信。</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-3 text-sm text-gray-700 mb-4 border border-gray-100">
+                            <span class="font-bold text-chimei-700 block mb-1">💡 決策重點</span>
+                            升級數位治理，導入 Teams 與動態進度表，建立回覆時限與異常升級閉環。
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 border-t border-gray-100 text-sm">
+                        <span class="block font-bold text-gray-800 mb-1">時程規劃：</span>
+                        <ul class="text-gray-600 space-y-1">
+                            <li><span class="font-semibold">短期：</span>高風險流程試辦即時回饋與動態進度</li>
+                            <li><span class="font-semibold">中期：</span>制度化數位協作與會議決議追蹤</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Group 7 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full overflow-hidden">
+                    <div class="h-2 bg-teal-500 w-full"></div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-teal-100 text-teal-800 text-xs font-bold px-3 py-1 rounded-full">第七組</span>
+                            <a href="https://drive.google.com/file/d/13o1aX2hyRJi1W_ObRGfoVFOXxm8melMP/view?usp=drivesdk" target="_blank" class="text-gray-400 hover:text-teal-600 transition" title="開啟原始報告"><i class="fa-solid fa-file-word text-xl"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">提升主管晉升意願策略</h3>
+                        <div class="mb-4">
+                            <p class="text-sm text-red-600 font-bold mb-1"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Top 優先風險</p>
+                            <p class="text-gray-600 text-sm">責任重、行政多、津貼誘因有限，面臨主管人才斷層。</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-3 text-sm text-gray-700 mb-4 border border-gray-100">
+                            <span class="font-bold text-chimei-700 block mb-1">💡 決策重點</span>
+                            四管齊下：清晰職涯、有感津貼、行政減量、導師陪跑，打造安全晉升路徑。
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 border-t border-gray-100 text-sm">
+                        <span class="block font-bold text-gray-800 mb-1">時程規劃：</span>
+                        <ul class="text-gray-600 space-y-1">
+                            <li><span class="font-semibold">短期：</span>盤點壓力源，彙整薪酬與工具清單</li>
+                            <li><span class="font-semibold">中期：</span>開設新世代主管課程與 Mentor 試辦</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Group 8 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full overflow-hidden">
+                    <div class="h-2 bg-orange-500 w-full"></div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full">第八組</span>
+                            <a href="https://drive.google.com/file/d/11RpzEwY5wUoozqibw9aRiPAa6XU_WbHn/view?usp=drivesdk" target="_blank" class="text-gray-400 hover:text-orange-600 transition" title="開啟原始報告"><i class="fa-solid fa-file-word text-xl"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">在職人員留任風險與策略</h3>
+                        <div class="mb-4">
+                            <p class="text-sm text-red-600 font-bold mb-1"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Top 優先風險</p>
+                            <p class="text-gray-600 text-sm">在職人員流失，經驗斷層加劇負荷，威脅病安與士氣。</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-3 text-sm text-gray-700 mb-4 border border-gray-100">
+                            <span class="font-bold text-chimei-700 block mb-1">💡 決策重點</span>
+                            從個案轉向「制度留才」，透過專科加給、彈性工時與智慧減負打造幸福職場。
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 border-t border-gray-100 text-sm">
+                        <span class="block font-bold text-gray-800 mb-1">時程規劃：</span>
+                        <ul class="text-gray-600 space-y-1">
+                            <li><span class="font-semibold">短期：</span>研議專案留任獎勵與重症/急難加給</li>
+                            <li><span class="font-semibold">中期：</span>確立津貼規範與在職心理諮商</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Group 9 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full overflow-hidden">
+                    <div class="h-2 bg-pink-500 w-full"></div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-pink-100 text-pink-800 text-xs font-bold px-3 py-1 rounded-full">第九組</span>
+                            <a href="https://drive.google.com/file/d/1dDgfPCt3-uv6o_So4QVp6ykD_M1RqFwv/view?usp=drivesdk" target="_blank" class="text-gray-400 hover:text-pink-600 transition" title="開啟原始報告"><i class="fa-solid fa-file-word text-xl"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">品牌形象風險與策略建議</h3>
+                        <div class="mb-4">
+                            <p class="text-sm text-red-600 font-bold mb-1"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Top 優先風險</p>
+                            <p class="text-gray-600 text-sm">護理品牌不明確，限制內部認同與外部招募吸引力。</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-3 text-sm text-gray-700 mb-4 border border-gray-100">
+                            <span class="font-bold text-chimei-700 block mb-1">💡 決策重點</span>
+                            將臨床品質轉化為品牌故事，結合短影音與數位社群，打造對內榮譽對外號召力。
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 border-t border-gray-100 text-sm">
+                        <span class="block font-bold text-gray-800 mb-1">時程規劃：</span>
+                        <ul class="text-gray-600 space-y-1">
+                            <li><span class="font-semibold">短期：</span>確認品牌 Slogan 識別與臨床故事盤點</li>
+                            <li><span class="font-semibold">中期：</span>品牌大使選拔與故事徵件、傳播培訓</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Phase 2: World Cafe Section -->
+    <section id="phase2" class="py-20 bg-chimei-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-chimei-700 font-bold tracking-wider uppercase text-sm">Phase 2</span>
+                <h2 class="text-3xl font-black text-gray-900 mt-2 mb-4">世界咖啡館：四大戰略群組與十桌矩陣</h2>
+                <div class="w-24 h-1 bg-chimei-600 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    將第一階段 9 組 Top 風險收斂去重，120 位主管混編為 10 桌輪轉討論，產出落地具體行動方案。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Group 1 -->
+                <div class="bg-white rounded-xl shadow-md border-l-8 border-blue-500 p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-users text-blue-500 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-gray-900">群組一：人才磁吸與幸福留任</h3>
+                    </div>
+                    <p class="text-sm text-gray-500 font-bold mb-4 bg-gray-100 inline-block px-3 py-1 rounded">焦點：人與環境</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="border-b border-gray-100 pb-3">
+                            <p class="font-bold text-gray-800 text-sm">第 1 桌：奇美護理品牌形象與招募創新 (對接1,9組)</p>
+                            <p class="text-sm text-gray-600 mt-1">產出：奇美護理品牌招募創新與多元管道推動方案</p>
+                        </li>
+                        <li class="border-b border-gray-100 pb-3">
+                            <p class="font-bold text-gray-800 text-sm">第 2 桌：新進人員支持與臨床教學一體化 (對接3,5組)</p>
+                            <p class="text-sm text-gray-600 mt-1">產出：新人 1-6 個月適應支持與 AI 輔助教材推動計畫</p>
+                        </li>
+                        <li>
+                            <p class="font-bold text-gray-800 text-sm">第 3 桌：在職人員激勵與幸福職場機制 (對接8組)</p>
+                            <p class="text-sm text-gray-600 mt-1">產出：在職同仁幸福感提升與專科留任獎勵辦法草案</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Group 2 -->
+                <div class="bg-white rounded-xl shadow-md border-l-8 border-amber-500 p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-gears text-amber-500 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-gray-900">群組二：跨領域流程與行政減量</h3>
+                    </div>
+                    <p class="text-sm text-gray-500 font-bold mb-4 bg-gray-100 inline-block px-3 py-1 rounded">焦點：事與流程</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="border-b border-gray-100 pb-3">
+                            <p class="font-bold text-gray-800 text-sm">第 4 桌：臨床高負荷流程刪減與業務轉移 (對接4,5組)</p>
+                            <p class="text-sm text-gray-600 mt-1">產出：護理臨床與行政業務簡量與轉移清單</p>
+                        </li>
+                        <li class="border-b border-gray-100 pb-3">
+                            <p class="font-bold text-gray-800 text-sm">第 5 桌：多元輔助人力調配與護病比因應 (對接1,4組)</p>
+                            <p class="text-sm text-gray-600 mt-1">產出：多元輔助人力池（輔護人力）調度與管理規則</p>
+                        </li>
+                        <li>
+                            <p class="font-bold text-gray-800 text-sm">第 6 桌：跨領域醫護協作溝通與閉環機制 (對接2,6組)</p>
+                            <p class="text-sm text-gray-600 mt-1">產出：跨領域數位協作（Teams）溝通與異常升級規範</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Group 3 -->
+                <div class="bg-white rounded-xl shadow-md border-l-8 border-teal-500 p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-ranking-star text-teal-500 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-gray-900">群組三：主管接班梯隊與變革領導</h3>
+                    </div>
+                    <p class="text-sm text-gray-500 font-bold mb-4 bg-gray-100 inline-block px-3 py-1 rounded">焦點：管理與永續</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="border-b border-gray-100 pb-3">
+                            <p class="font-bold text-gray-800 text-sm">第 7 桌：主管職涯再設計與有感激勵辦法 (對接7組)</p>
+                            <p class="text-sm text-gray-600 mt-1">產出：護理主管職涯地圖再設計與責任津貼優化對策</p>
+                        </li>
+                        <li class="border-b border-gray-100 pb-3">
+                            <p class="font-bold text-gray-800 text-sm">第 8 桌：主管行政減負與智慧化決策支援 (對接4,7組)</p>
+                            <p class="text-sm text-gray-600 mt-1">產出：護理排班智慧化與 BI 決策支援報表需求規格</p>
+                        </li>
+                        <li>
+                            <p class="font-bold text-gray-800 text-sm">第 9 桌：新世代主管「導師陪跑」支持系統 (對接2,7組)</p>
+                            <p class="text-sm text-gray-600 mt-1">產出：新世代護理主管「導師陪跑（Mentor）」制度規劃書</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Group 4 -->
+                <div class="bg-white rounded-xl shadow-md border-l-8 border-rose-500 p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-chart-line text-rose-500 text-2xl"></i>
+                        <h3 class="text-xl font-bold text-gray-900">群組四：實證成果與數據治理</h3>
+                    </div>
+                    <p class="text-sm text-gray-500 font-bold mb-4 bg-gray-100 inline-block px-3 py-1 rounded">焦點：成果與驗證</p>
+                    
+                    <ul class="space-y-4">
+                        <li>
+                            <p class="font-bold text-gray-800 text-sm">第 10 桌：Magnet 實證指標與全院監測儀表板 (對接全體1-9組)</p>
+                            <p class="text-sm text-gray-600 mt-1">產出：護理部年度策略與 Magnet 實證成果監測架構（看板規格）</p>
+                        </li>
+                        <li class="pt-4 border-t border-gray-100 mt-4">
+                            <div class="bg-rose-50 p-4 rounded-lg">
+                                <p class="text-sm text-rose-800 font-medium"><i class="fa-solid fa-circle-info mr-1"></i> 第十桌肩負將各桌行動方案轉化為可量測指標的任務，確保所有決策落地皆有數據支撐。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="font-semibold text-gray-300 mb-2">2026 奇美醫院護理部主管共識營</p>
+            <p class="text-sm mb-4">以人為本 • 追求卓越 • Magnet Hospital 磁吸精神</p>
+            <p class="text-xs text-gray-600">&copy; 2026 Chi Mei Medical Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
